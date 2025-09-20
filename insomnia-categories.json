@@ -1,0 +1,486 @@
+{
+	"_type": "export",
+	"__export_format": 4,
+	"__export_date": "2025-09-18T00:00:00.000Z",
+	"__export_source": "insomnia.desktop.app:v8.6.1",
+	"resources": [
+		{
+			"_id": "req_get_all_categories",
+			"parentId": "fld_categories",
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"url": "{{ _.base_url }}/api/categories",
+			"name": "Get All Categories",
+			"description": "Retrieve all categories",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726617600000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_get_category_by_id",
+			"parentId": "fld_categories",
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"url": "{{ _.base_url }}/api/categories/1",
+			"name": "Get Category by ID",
+			"description": "Retrieve a specific category by ID",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726617590000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_create_category",
+			"parentId": "fld_categories",
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"url": "{{ _.base_url }}/api/categories",
+			"name": "Create Category - Alimentação",
+			"description": "Create a new category for food",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Alimentação\",\n\t\"color\": \"#FF6B6B\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726617580000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_create_category_transport",
+			"parentId": "fld_categories",
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"url": "{{ _.base_url }}/api/categories",
+			"name": "Create Category - Transporte",
+			"description": "Create a new category for transport",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Transporte\",\n\t\"color\": \"#4ECDC4\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726617579000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_create_category_entertainment",
+			"parentId": "fld_categories",
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"url": "{{ _.base_url }}/api/categories",
+			"name": "Create Category - Lazer",
+			"description": "Create a new category for entertainment",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Lazer\",\n\t\"color\": \"#45B7D1\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726617578000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_update_category",
+			"parentId": "fld_categories",
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"url": "{{ _.base_url }}/api/categories/1",
+			"name": "Update Category",
+			"description": "Update an existing category",
+			"method": "PUT",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Alimentação Atualizada\",\n\t\"color\": \"#FF0000\"\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726617570000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_delete_category",
+			"parentId": "fld_categories",
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"url": "{{ _.base_url }}/api/categories/1",
+			"name": "Delete Category",
+			"description": "Delete a category by ID",
+			"method": "DELETE",
+			"body": {},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726617560000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_get_all_transactions",
+			"parentId": "fld_transactions",
+			"modified": 1726700000000,
+			"created": 1726700000000,
+			"url": "{{ _.base_url }}/api/transactions",
+			"name": "Get All Transactions",
+			"description": "Retrieve all transactions",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726700000000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_get_transaction_by_id",
+			"parentId": "fld_transactions",
+			"modified": 1726700000000,
+			"created": 1726700000000,
+			"url": "{{ _.base_url }}/api/transactions/1",
+			"name": "Get Transaction by ID",
+			"description": "Retrieve a specific transaction by ID",
+			"method": "GET",
+			"body": {},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726699990000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_create_transaction",
+			"parentId": "fld_transactions",
+			"modified": 1726700000000,
+			"created": 1726700000000,
+			"url": "{{ _.base_url }}/api/transactions",
+			"name": "Create Transaction",
+			"description": "Create a new transaction",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"price\": 150.75,\n\t\"description\": \"Compras no supermercado\",\n\t\"category_id\": 1\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726699980000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_create_transaction_transport",
+			"parentId": "fld_transactions",
+			"modified": 1726700000000,
+			"created": 1726700000000,
+			"url": "{{ _.base_url }}/api/transactions",
+			"name": "Create Transaction - Transport",
+			"description": "Create a new transport transaction",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"price\": 45.00,\n\t\"description\": \"Uber para o trabalho\",\n\t\"category_id\": 2\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726699975000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_create_transaction_entertainment",
+			"parentId": "fld_transactions",
+			"modified": 1726700000000,
+			"created": 1726700000000,
+			"url": "{{ _.base_url }}/api/transactions",
+			"name": "Create Transaction - Entertainment",
+			"description": "Create a new entertainment transaction",
+			"method": "POST",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"price\": 89.90,\n\t\"description\": \"Cinema + pipoca\",\n\t\"category_id\": 3\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726699970000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_update_transaction",
+			"parentId": "fld_transactions",
+			"modified": 1726700000000,
+			"created": 1726700000000,
+			"url": "{{ _.base_url }}/api/transactions/1",
+			"name": "Update Transaction",
+			"description": "Update an existing transaction",
+			"method": "PUT",
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"price\": 200.00,\n\t\"description\": \"Compras no supermercado - Atualizada\",\n\t\"category_id\": 1\n}"
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726699960000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "req_delete_transaction",
+			"parentId": "fld_transactions",
+			"modified": 1726700000000,
+			"created": 1726700000000,
+			"url": "{{ _.base_url }}/api/transactions/1",
+			"name": "Delete Transaction",
+			"description": "Delete a transaction by ID",
+			"method": "DELETE",
+			"body": {},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1726699950000,
+			"isPrivate": false,
+			"settingStoreCookies": true,
+			"settingSendCookies": true,
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingFollowRedirects": "global",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_categories",
+			"parentId": "wrk_expenses_control",
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"name": "Categories",
+			"description": "Category management endpoints",
+			"environment": {},
+			"environmentPropertyOrder": null,
+			"metaSortKey": -1726617600000,
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_transactions",
+			"parentId": "wrk_expenses_control",
+			"modified": 1726700000000,
+			"created": 1726700000000,
+			"name": "Transactions",
+			"description": "Transaction management endpoints",
+			"environment": {},
+			"environmentPropertyOrder": null,
+			"metaSortKey": -1726700000000,
+			"_type": "request_group"
+		},
+		{
+			"_id": "wrk_expenses_control",
+			"parentId": null,
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"name": "Expenses Control API",
+			"description": "API for managing expenses and categories",
+			"scope": "collection",
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_base",
+			"parentId": "wrk_expenses_control",
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"name": "Base Environment",
+			"data": {
+				"base_url": "http://localhost:8080"
+			},
+			"dataPropertyOrder": {
+				"&": [
+					"base_url"
+				]
+			},
+			"color": null,
+			"isPrivate": false,
+			"metaSortKey": 1726617600000,
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_cookies",
+			"parentId": "wrk_expenses_control",
+			"modified": 1726617600000,
+			"created": 1726617600000,
+			"name": "Default Jar",
+			"cookies": [],
+			"_type": "cookie_jar"
+		}
+	]
+}
