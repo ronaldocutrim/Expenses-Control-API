@@ -3,7 +3,7 @@ DB_USER ?= postgres
 DB_NAME ?= expensescontrol
 
 run:
-	./mvnw spring-boot:run -Dspring.devtools.restart.enabled=true
+	./mvnw spring-boot:run
 deps:
 	./mvnw dependency:resolve
 db:

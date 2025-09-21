@@ -2,14 +2,13 @@ spring:
   application:
     name: expenses-control
   datasource:
-    url: jdbc:postgresql://localhost:5432/expensescontrol
-    username: postgres
-    password: docker
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/expensescontrol
+    username: ${DB_USER:postgres}
+    password: ${DB_PASS:docker}
     driver-class-name: org.postgresql.Driver
+    maxActive: 3
   jpa:
-    show-sql: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        format_sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
